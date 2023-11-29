@@ -1,0 +1,15 @@
+/* w1280 */
+@media only screen and (min-width: 1281px){
+    .maxScreen{
+        width: 1200px;
+    }
+    .cartContainer{
+        height: 850px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+
+
+}
