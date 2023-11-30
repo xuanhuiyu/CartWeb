@@ -1,25 +1,31 @@
+@import url(reset.css);
+
 body {
     font-family: 'Roboto';
     line-height: 1.6;
     color: #613c11;
     width: 100%;
+    letter-spacing: .05rem;
 }
 
 .cart{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
 }
 
 .cartContainer{
     margin: 0 auto;
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 100px);
+    /* min-height: calc(100vh - 100px); */
 }
 
 .cartTitle1{
+    display: block;
+    max-width: 1200px;
+    margin: 20px auto;
     font-size: 1.75rem;
     color: #613c11;
 }
@@ -44,13 +50,13 @@ body {
 
 .cardStyle1{
     grid-column: 1/2;
-    grid-row: 1/5;
+    grid-row: 1/6;
 }
 
 .cartTitle2{
     display: block;
     font-size: 1.25rem;
-    padding-top: 16px;
+    padding: 16px 0;
     margin-left: 24px;
 }
 
@@ -87,6 +93,19 @@ li{
 .cardUp span:first-child{
     text-indent: -8px;
     flex-grow: 1;
+}
+
+.cardUp a{
+    text-decoration: none;
+    color: #613c11;
+}
+
+.cardUp a:hover{
+    color: #EAC18E;
+}
+
+.cardUp a:active{
+    color: #CEA574;
 }
 
 .material-symbols-outlined{
@@ -144,10 +163,20 @@ li{
     width: 36px;
 }
 
+.input-stepper input[type=number]::-webkit-inner-spin-button,
+.input-stepper input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+/* .input-stepper input[type=number] {
+    -moz-appearance: textfield;
+  } */
+
 /* 加價購 */
 .cardStyle2{
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 6/6;
 }
 
 .addCard{
@@ -188,6 +217,9 @@ li{
 /* 優惠票券 */
 .cardStyle3{
     grid-area:1/2/1/4;
+    /* grid-column: 2/4; */
+    /* grid-row-start: 1fr; */
+    /* grid-row: 1/1; */
 }
 
 .cartCoupon{
@@ -200,27 +232,140 @@ li{
     border-radius: 8px;
     color: #fff;
     background-color: #CFAD84;
-    margin: 12px auto;
+    margin: 0 auto 16px;
 }
 
+.cartCoupon:hover{
+    background-color:#EAC18E;
+}
+
+.cartCoupon:active{
+    background-color:#CEA574;
+}
 
 /* 點數 */
 .cardStyle4{
-    grid-area:2/2/2/4;
+    /* grid-area:2/2/2/4; */
+    grid-column: 2/4;
+    /* grid-row: 1/1; */
 }
 
 .cartPoint{
-    display: inline-flex;
+    display:flex;
+    width: 350px;
+    height: 50px;
+    margin: 0 auto 16px;
+    align-items: center;
+    justify-content: center;
+}
 
+.cartPoint input{
+    width: 188px;
+    line-height: 48px;
+    border: 1px solid #CFAD84;
+    border-radius: 8px;
+    text-indent: 8px;
+    font-size: 1rem;
+    color: #BDBDBD;
+    letter-spacing: .05rem;
+}
+
+.cartPoint input:focus{
+    border: #613c11;
+}
+
+.cartPoint p{
+    flex-grow: 1;
+    align-self: baseline;
 }
 
 .cartPoint p:nth-child(2){
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight:bold;
+    /* flex-grow: 1; */
+}
+
+.cartPoint p:nth-child(3){
+    /* flex-grow: 1; */
 }
 
 /*付款明細 */
 .cardStyle5{
-    grid-area:3/2/5/4;
+    /* grid-row:3/5; */
+    grid-column: 2/4;
 }
 
+.cardStyle5 ul{
+    display: block;
+    margin: 0 24px;
+}
+
+.cardStyle5 li{
+    display: flex;
+    justify-content:space-between ;
+    padding-bottom: 12px;
+}
+
+.cardStyle5 li:last-child{
+    align-items: baseline;
+}
+
+.cardStyle5 li > span{
+    display: block;
+    height: 1px;
+    width: 350px;
+    background-color:#613c11;
+}
+
+.cardStyle5 li:last-child > p:last-child{
+    /* background-color: #fff; */
+    font-size: 1.25rem;
+    font-weight:bolder;
+}
+
+/* Fix area */
+.cartPaynow{
+    flex: 0 0 auto;
+    position: sticky;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    box-shadow: 0 -5px 10px rgba(163, 163, 163,0.25);
+
+}
+
+.cartPaynow div{
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.cartPaynow p:nth-child(1){
+    font-size: 1.25rem;
+    margin-right: 8px;
+    align-self: center;
+}
+
+.cartPaynow p + p{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-right: 16px;
+    align-self: center;
+}
+
+.cartPaynow a{
+    text-decoration: none;
+    display:block;
+    width: 350px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #CEA574;
+    color: #fff;
+    border-radius: 8px;
+}
