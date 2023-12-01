@@ -29,7 +29,6 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
-    /* min-height: calc(100vh - 100px); */
 }
 
 .cartTitle1{
@@ -83,8 +82,8 @@ li{
 .cartProdlist{
     display: inline-flex;
     justify-content: space-between;
-    padding-bottom: 16px;
-    margin-bottom: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
     border-bottom: 1px solid #613c11;
 }
 
