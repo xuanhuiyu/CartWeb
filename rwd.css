@@ -1,0 +1,54 @@
+/* GPT */
+
+/* RWD 設定 */
+
+/* 手機尺寸以下 */
+@media screen and (max-width: 768px) {
+    .cartContainer {
+        width: 100%;
+        max-width:100%;
+        padding: 0 16px;
+        grid-template-columns: 1fr; /* 一欄 */
+        grid-gap: 16px;
+    }
+
+    .leftCard, .rightCard {
+        grid-column: span 1; /* 寬度擴展為一欄 */
+    }
+
+    .cardStyle1, .cardStyle2, .cardStyle3, .cardStyle4, .cardStyle5 {
+        width: 100%;
+    }
+
+    .cartCoupon {
+        width: 100%;
+    }
+}
+
+/* 平板尺寸 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cartContainer {
+        padding: 0 24px;
+    }
+
+    .leftCard, .rightCard {
+        grid-column: span 2; /* 寬度擴展為兩欄 */
+    }
+
+    .cartPoint {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cartStyle5 li > span {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* 大尺寸螢幕 */
+@media (min-width: 1025px) {
+    .cartContainer {
+        padding: 0;
+    }
+}

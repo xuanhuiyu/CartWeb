@@ -1,64 +1,97 @@
 window.onload = function(){
 
     // input step
-    const quantityInput1 = document.querySelector("#quantity1");
-    const decreaseButton1 = document.querySelector("#decrease1");
-    const increaseButton1 = document.querySelector("#increase1");
 
-    const quantityInput2 = document.querySelector("#quantity2");
-    const decreaseButton2 = document.querySelector("#decrease2");
-    const increaseButton2 = document.querySelector("#increase2");
+    const all_increaseButton = document.querySelectorAll('.plus')
+    const all_decreaseButton = document.querySelectorAll('.minus')
 
-    const quantityInput3 = document.querySelector("#quantity3");
-    const decreaseButton3 = document.querySelector("#decrease3");
-    const increaseButton3 = document.querySelector("#increase3");
 
-    decreaseButton1.addEventListener("click", () => {
-    let currentQuantity = parseInt(quantityInput1.value);
-    if (currentQuantity > 1) {
-        quantityInput1.value = currentQuantity - 1;
-        // aa = currentQuantity;
+    for (let index = 0; index < all_increaseButton.length; index++) {
+        const button = all_increaseButton[index];
+        const data_id = button.getAttribute('data-id')
+        const quantityInput = document.querySelector(`input[data-id="${data_id}"]`)
+
+        button.addEventListener('click',()=>{
+            let currentQuantity = parseInt(quantityInput.value);
+            quantityInput.value = currentQuantity + 1;
+
+          })
     }
-    });
-    
-    increaseButton1.addEventListener("click", () => {
-        let currentQuantity = parseInt(quantityInput1.value);
-        quantityInput1.value = currentQuantity + 1;
-        // aa  = currentQuantity;
-      });
 
-    decreaseButton2.addEventListener("click", () => {
-        let currentQuantity = parseInt(quantityInput2.value);
-        if (currentQuantity > 1) {
-            quantityInput2.value = currentQuantity - 1;
-            // aa = currentQuantity;
-        }
-    });
 
-    increaseButton2.addEventListener("click", () => {
-        let currentQuantity = parseInt(quantityInput2.value);
-        if  (currentQuantity > 1) {
-            quantityInput2.value = currentQuantity + 1;
-            // aa  = currentQuantity;
-        }
-    });
+    for (let index = 0; index < all_decreaseButton.length; index++) {
+        const button = all_decreaseButton[index];
+        const data_id = button.getAttribute('data-id')
+        const quantityInput = document.querySelector(`input[data-id="${data_id}"]`)
 
-    decreaseButton3.addEventListener("click", () => {
-        let currentQuantity = parseInt(quantityInput3.value);
-        if (currentQuantity > 1) {
-            quantityInput3.value = currentQuantity - 1;
-            // aa = currentQuantity;
-        }
-    });
+        button.addEventListener('click',()=>{
+            console.log('decreaseButton3');
+                let currentQuantity = parseInt(quantityInput.value);
+            console.log('decreaseButton3');
 
-    increaseButton3.addEventListener("click", () => {
-        let currentQuantity = parseInt(quantityInput3.value);
-        if  (currentQuantity > 1) {
-            quantityInput3.value = currentQuantity + 1;
-            // aa  = currentQuantity;
-        }
-    });
-      
+                if (currentQuantity > 1) {
+                    quantityInput.value = currentQuantity - 1;
+                }
+          })
+    }
 
-   
+    // Delet pop
+
+    $(function(){
+
+        $('.cartDelet').click(function(){
+          $('.cartMask').css({'display':'block',});
+        })
+        $('.cartPopclose').click(function(){
+          $('.cartMask').removeAttr('style');
+        })
+        $('.cartMask').click(function(){
+          $(this).removeAttr('style');
+        })
+
+        $('.Deletbtn2').click(function(){
+            $('.cartDeletpopup').css({'display':'none',});
+            $('.DeletPod').css({'display':'none',});
+            $('.cardStyle1').css({'grid-row':'1/5',});
+            $('.cardStyle2').css({'grid-row':'5/5',});
+            $('.cartSave').css({'z-index':'9999',});
+        })
+
+        // $('.cartDeletpopup').click(function(e){
+        //   e.stopPropagation();
+        // })
+        // 問老師，如何刪除縮排
+        // $('.Deletbtn2').click(function(e){
+        //     $('.DeletPod').css({'display':'none',});
+        //     $('.cardStyle1').css({'grid-row':'1/5',});
+        //     $('.cardStyle2').css({'grid-row':'5/5',});
+
+        //     $('.cartSave').css({'display':'block',});
+        //     $('.cartMask').css({'display':'block',});
+        //     $('.cartDeletpopup').css({'display':'none',});
+
+        // })
+
+        // $('.cartSave').click(function(e){
+        //     e.stopPropagation();
+        // })
+
+        // 加入票券
+        $('.cartCoupon').click(function(){
+            $('.cartMask2').css({'display':'block',});
+        })
+        $('.cartPopclose').click(function(){
+            $('.cartMask2').removeAttr('style');
+        })
+        $('.Savebtn1').click(function(){
+            $('.cartMask2').removeAttr('style');
+        })
+        $('.cartMask2').click(function(){
+            $(this).removeAttr('style');
+        })
+        $('.cartCouponspop').click(function(e){
+            e.stopPropagation();
+        })
+
+    })
 }

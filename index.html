@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="cartRWD.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <title>Shopping Cart</title>
 </head>
 <body>
 
-    <div class="cart maxScreen">
+    <div class="cart">
         <span class="cartTitle1">購物車</span>
         <!-- Cart contain -->
         <div class="cartContainer">
@@ -31,9 +33,9 @@
                             <div class="cardDown">
                                 <span>NT$ 398</span>
                                 <div class="input-stepper">
-                                    <button id="decrease1" class="minus"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" id="quantity1" value="2">
-                                    <button id="increase1" class="plus"><span class="material-symbols-outlined">add</span></button>
+                                    <button class="minus" data-id="1"><span class="material-symbols-outlined">remove</span></button>
+                                    <input type="number" value="2" data-id="1">
+                                    <button class="plus" data-id="1"><span class="material-symbols-outlined">add</span></button>
                                 </div>
                             </div>
                         </div>
@@ -50,28 +52,28 @@
                             <div class="cardDown">
                                 <span>NT$ 477</span>
                                 <div class="input-stepper">
-                                    <button id="decrease2" class="minus"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" id="quantity2" value="3">
-                                    <button id="increase2" class="plus"><span class="material-symbols-outlined">add</span></button>
+                                    <button class="minus" data-id="2"><span class="material-symbols-outlined">remove</span></button>
+                                    <input type="number" value="3" data-id="2">
+                                    <button class="plus" data-id="2"><span class="material-symbols-outlined">add</span></button>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="cartProdlist">
+                    <li class="cartProdlist DeletPod">
                         <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
                         <div class="cartCard">
                             <div class="cardUp">
                                 <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
-                                <a href=""><span class="material-symbols-outlined">
+                                <a href="#" class="cartDelet"><span class="material-symbols-outlined">
                                     close
                                 </span></a>
                             </div>
                             <div class="cardDown">
                                 <span>NT$ 199</span>
                                 <div class="input-stepper">
-                                    <button id="decrease3" class="minus"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" id="quantity3" value="1">
-                                    <button id="increase3" class="plus"><span class="material-symbols-outlined">add</span></button>
+                                    <button class="minus" data-id="3"><span class="material-symbols-outlined">remove</span></button>
+                                    <input type="number" value="1" data-id="3">
+                                    <button class="plus" data-id="3"><span class="material-symbols-outlined">add</span></button>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +138,11 @@
             <section class="rightCard cardStyle4">
                 <span class="cartTitle2">點數折抵</span>
                 <div class="cartPoint">
-                    <p>目前累積</p>
-                    <p>100</p>
-                    <p>點</p>
+                    <span>
+                        <p>目前累積</p>
+                        <p>100</p>
+                        <p>點</p>
+                    </span>
                     <input type="text" placeholder="輸入本次折抵點數">
                 </div>
             </section>
@@ -180,6 +184,96 @@
                 <p>小計</p>
                 <P>NT$ 1,074</P>
                 <a href="">立即結帳</a>
+            </div>
+        </div>
+
+        <!-- Delet pop -->
+        <div class="cartMask">
+            <div class="cartDeletpopup">
+                <div class="cartPopTitle">
+                    <h3>確定要移除這項商品嗎?</h3>
+                    <a href="" class="cartPopclose"><span class="material-symbols-outlined">close</span></a>
+                </div>
+
+                <div>
+                    <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                    <div class="cartCard">
+                        <div class="cardUp">
+                            <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
+                        </div>
+                        <div class="cardDown">
+                            <span>NT$ 199</span>
+                            <span>X1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Deletbtn">
+                    <a href="" class="Deletbtn1">保留</a>
+                    <a href="" class="Deletbtn2">刪除</a>
+                </div>
+            </div>
+            <div class="cartSave">
+                <div class="cartPopTitle">
+                    <h3>已刪除商品，是否要加入收藏</h3>
+                    <a href="" class="cartPopclose"><span class="material-symbols-outlined">close</span></a>
+                </div>
+
+                <div>
+                    <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                    <div class="cartInfo">
+                            <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
+                            <span>NT$ 199</span>
+                    </div>
+                </div>
+
+                <div class="Deletbtn">
+                    <a href="" class="Deletbtn1">取消</a>
+                    <a href="" class="Deletbtn2">收藏</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coupons pop -->
+        <div class="cartMask2">
+            <div class="cartCouponspop">
+                <div class="cartPopTitle">
+                    <h3>優惠券/優惠碼</h3>
+                    <a href="" class="cartPopclose"><span class="material-symbols-outlined">close</span></a>
+                </div>
+                <div class="cartCouponsList">
+                    <ul>
+                        <li>
+                            <input type="radio" id="radio1" name="options">
+                            <label for="radio1">
+                                <span><p>星饗券</p><p>使用期限2023/12/20</p></span>
+                                <span>300元優惠</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio2" name="options">
+                            <label for="radio2">
+                                <span><p>即饗券</p><p>使用期限2023/12/20</p></span>
+                                <span>8折優惠</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio3" name="options">
+                            <label for="radio3">
+                                <span><p>好饗券</p><p>使用期限2023/12/20</p></span>
+                                <span>9折優惠</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio4" name="options">
+                            <label for="radio4">
+                                <span><p>樂饗券</p><p>使用期限2023/12/20</p></span>
+                                <span>免運</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="Savebtn1">確認</a>
             </div>
         </div>
     </div>
