@@ -55,7 +55,7 @@
                                 <span>NT$150</span>
                             </label>
                         </li>
-                        <li>
+                        <li class="Delivery">
                             <input type="radio" id="radio2" name="options">
                             <label for="radio2">
                                 <span>宅配</span>
@@ -82,37 +82,46 @@
                 <section class="card Left2">
                     <span class="cartTitle2">付款方式</span>
                     <ul>
-                        <li>
+                        <li class="cartCredit1">
                             <input type="radio" id="radio3" name="optionsPay">
                             <label for="radio3">
                                 <span>信用卡一次付清</span>
                                 <span><img src="img/PC/任務01/Frame 50.svg" alt=""></span>
                             </label>
                         </li>
-                        <li class="cartCridtcard">
+                        <li id='cartCreditcard1' class="cartCreditcard">
                             <span>
                                 <input type="text" placeholder="卡號">
                                 <input type="text" placeholder="月份/年份">
                                 <input type="text" placeholder="末三碼">
                             </span>
-                            <span><input type="checkbox" id="checkbox1" name="check"><p>下次繼續用這張卡</p></span>
+                            <span><input type="checkbox" id="checkbox1" name="check"><label for="checkbox1">下次繼續用這張卡</label></span>
                             <span>本公司將依您提供資料向銀行及持卡人照會並保留出貨權益，如冒用他人信用卡及個資，經查獲必移送法辦。</span>
                         </li>
-                        <li>
+                        <li class="cartCredit2">
                             <input type="radio" id="radio4" name="optionsPay">
                             <label for="radio4">
                                 <span>信用卡分期</span>
                                 <span><img src="img/PC/任務01/Frame 50.svg" alt=""></span>
                             </label>
                         </li>
-                        <li>
+                        <li  id='cartCreditcard2' class="cartCreditcard">
+                            <span>
+                                <input type="text" placeholder="卡號">
+                                <input type="text" placeholder="月份/年份">
+                                <input type="text" placeholder="末三碼">
+                            </span>
+                            <span><input type="checkbox" id="checkbox2" name="check"><label for="checkbox2">下次繼續用這張卡</label></span>
+                            <span>本公司將依您提供資料向銀行及持卡人照會並保留出貨權益，如冒用他人信用卡及個資，經查獲必移送法辦。</span>
+                        </li>
+                        <li class="cartCredit3">
                             <input type="radio" id="radio5" name="optionsPay">
                             <label for="radio5">
                                 <span><img src="img/LINE Pay_PNG/LINE-Pay(h)_W85_n.png" alt=""></span>
                                 <!-- <span>NT$150</span> -->
                             </label>
                         </li>
-                        <li>
+                        <li class="cartCredit4">
                             <input type="radio" id="radio6" name="optionsPay">
                             <label for="radio6">
                                 <span>ATM付款</span>
@@ -126,25 +135,31 @@
                 <section class="card Left3">
                     <span class="cartTitle2">發票類型</span>
                     <ul>
-                        <li>
+                        <li class='cartInvoice1'>
                             <input type="radio" id="radio7" name="optionsInvoice">
                             <label for="radio7">
                                 <span>手機載具</span>
                             </label>
                         </li>
-                        <li class="cartInvoice">
+                        <li id='cartInvoice1' class="cartInvoice">
                             <span>
                                 <input type="text" placeholder="請輸入’/’後7碼">
                             </span>
-                            <span><input type="checkbox" id="checkbox1" name="check"><p>設為常用載具</p></span>
+                            <span><input type="checkbox" id="checkbox3" name="check"><label for="checkbox3">設為常用載具</label></span>
                         </li>
-                        <li>
+                        <li class='cartInvoice2'>
                             <input type="radio" id="radio8" name="optionsInvoice">
                             <label for="radio8">
                                 <span>自然人憑證</span>
                             </label>
                         </li>
-                        <li>
+                        <li id='cartInvoice2' class="cartInvoice">
+                            <span>
+                                <input type="text" placeholder="請輸入2個英文字母及14個數字">
+                            </span>
+                            <span><input type="checkbox" id="checkbox4" name="check"><label for="checkbox4">設為常用載具</label></span>
+                        </li>
+                        <li id='cartInvoice3'>
                             <input type="radio" id="radio9" name="optionsInvoice">
                             <label for="radio9">
                                 <span>公司統編</span>
@@ -152,22 +167,90 @@
                         </li>
                     </ul>
                 </section>
-                <!-- <section>CCC</section> -->
-                <!-- <section>DDD</section> -->
+
             </div>
             <div class="cartRight">
-                <!-- <section>EEE</section> -->
-                <!-- <section>FFF</section> -->
+                <!-- 付款明細 -->
+                <section class="card Right1">
+                    <span class="cartTitle2">付款明細</span>
+                    <ul>
+                        <li>
+                            <p>商品金額</p>
+                            <p>NT$ 1,074</p>
+                        </li>
+                        <li>
+                            <p>優惠折抵</p>
+                            <p>NT$ -88</p>
+                        </li>
+                        <li>
+                            <p>點數折抵</p>
+                            <p>-</p>
+                        </li>
+                        <li>
+                            <p>運送費用</p>
+                            <p>NT$ 200</p>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <p>小計</p>
+                            <p>NT$ 587</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 商品資訊 -->
+                <section class="card Right2">
+                    <div class="cartDetail">
+                        <span class="cartTitle2">商品明細</span>
+                        <a><span class="material-symbols-outlined">
+                            expand_less
+                        </span></a>
+                    </div>
+                    <ul id="cartRightlist">
+                        <li class="cartRight2list">
+                            <img src="img/MOBILE/牛麵.png" alt="紅燒牛肉麵">
+                            <div class="cartCard">
+                                <div class="cardUp">
+                                    <span>【即饗】紅燒牛肉麵(580g/包)</span>
+                                </div>
+                                <div>
+                                    <span>NT$ 199</span>
+                                    <span>X2</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cartRight2list">
+                            <img src="img/MOBILE/蒸餃.png" alt="鮮蝦蒸餃">
+                            <div class="cartCard">
+                                <div class="cardUp">
+                                    <span>【即饗】極享鮮蝦蒸餃(120g/包)(10入/袋)</span>
+                                </div>
+                                <div class="cardDown">
+                                    <span>NT$ 159</span>
+                                    <span>X3</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </div>
 
-        
-
+        <!-- Fix area -->
+        <div class="cart2Paynow">
+            <div>
+                <p>小計</p>
+                <P>NT$ 587</P>
+                <a href="">立即結帳</a>
+            </div>
+        </div>
 
     </div>
     
 
 <script src="jquery-3.3.1.min.js"></script>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 </body>
 </html>

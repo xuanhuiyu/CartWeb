@@ -39,42 +39,42 @@ window.onload = function(){
 
     $(function(){
 
-        $('.cartDelet').click(function(){
+        $('#cartDelet').click(function(){
           $('.cartMask').css({'display':'block',});
+          $('.cartDelet').addClass('open');
+
         })
         $('.cartPopclose').click(function(){
           $('.cartMask').removeAttr('style');
+          $('.cartDelet').removeClass('open');
+          $('.cartSave').removeClass('open');
         })
+
+        $('.Deletbtn1').click(function(){
+            $('.cartMask').removeAttr('style');
+            $('.cartDelet').removeClass('open');
+            $('.cartSave').removeClass('open');
+        })
+
         $('.cartMask').click(function(){
           $(this).removeAttr('style');
+          $('.cartDelet').removeClass('open');
+          $('.cartSave').removeClass('open');
         })
 
         $('.Deletbtn2').click(function(){
-            $('.cartDeletpopup').css({'display':'none',});
+            $('.cartDelet').removeClass('open');
             $('.DeletPod').css({'display':'none',});
-            $('.cardStyle1').css({'grid-row':'1/5',});
-            $('.cardStyle2').css({'grid-row':'5/5',});
-            $('.cartSave').css({'z-index':'9999',});
+            $('.cartSave').addClass('open');
         })
 
-        // $('.cartDeletpopup').click(function(e){
-        //   e.stopPropagation();
-        // })
-        // 問老師，如何刪除縮排
-        // $('.Deletbtn2').click(function(e){
-        //     $('.DeletPod').css({'display':'none',});
-        //     $('.cardStyle1').css({'grid-row':'1/5',});
-        //     $('.cardStyle2').css({'grid-row':'5/5',});
+        $('.cartDelet').click(function(e){
+          e.stopPropagation();
+        })
 
-        //     $('.cartSave').css({'display':'block',});
-        //     $('.cartMask').css({'display':'block',});
-        //     $('.cartDeletpopup').css({'display':'none',});
-
-        // })
-
-        // $('.cartSave').click(function(e){
-        //     e.stopPropagation();
-        // })
+        $('.cartSave').click(function(e){
+            e.stopPropagation();
+        })
 
         // 加入票券
         $('.cartCoupon').click(function(){
