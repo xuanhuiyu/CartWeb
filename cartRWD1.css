@@ -90,7 +90,7 @@
         width: 100%;
     }
 
-    .cartDelet,.cartSave,.cartNt{
+    .cartDelet,.cartSave,.cartNt,.cartCouponspop{
         width: 70%;
     }
 
@@ -130,6 +130,17 @@
 
     .cartPaynow p + p{
         font-size: 1.75rem;
+    }
+
+    .cartCouponsList p{
+        font-size: 1rem;
+    }
+
+    .cartCouponsList label span:last-child{
+        font-size: 1.25rem;
+    }
+    input[type="radio"] + label::before{
+        margin-right: 8px;
     }
 }
 
