@@ -50,7 +50,7 @@ window.onload = function(){
           $('.cartSave').removeClass('open');
         })
 
-        $('.Deletbtn1').click(function(){
+        $('#Cancel1').click(function(){
             $('.cartMask').removeAttr('style');
             $('.cartDelet').removeClass('open');
             $('.cartSave').removeClass('open');
@@ -62,10 +62,24 @@ window.onload = function(){
           $('.cartSave').removeClass('open');
         })
 
-        $('.Deletbtn2').click(function(){
+        $('#Delet').click(function(){
             $('.cartDelet').removeClass('open');
             $('.DeletPod').css({'display':'none',});
             $('.cartSave').addClass('open');
+        })
+
+        $('#Cancel2').click(function(){
+            $('.cartMask').removeAttr('style');
+            $('.cartSave').removeClass('open');
+        })
+
+        $('#Save').click(function(){
+            // $('.cartDelet').removeClass('open');
+            $('.cartSave').css({'display':'none',});
+            $('.cartNt').addClass('open');
+            $('.cartNt').fadeOut(1500);
+            $('.cartMask').removeAttr('style');
+
         })
 
         $('.cartDelet').click(function(e){

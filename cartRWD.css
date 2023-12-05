@@ -2,7 +2,7 @@
 @media screen and (max-width: 1201px){
     .cartContainer{
         width: auto;
-        margin: 0 60px;
+        margin: 0 100px;
         padding-bottom: 100px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -12,18 +12,17 @@
     } 
 
     .cartTitle1{
-        width: 90vw;
-        /* margin-right: 40px; */
+        margin-left: 100px;
     }
 
-    .cartPaynow {
-        width: 100vw;
+    .cartPaynow a{
+        margin-right: 100px;
     }
 
-    .cartPaynow div{
+    /* .cartPaynow div{
         width: 80vw;
         margin-right: 50px;
-    }
+    } */
 
     .leftCard{
         width: auto;
@@ -57,7 +56,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        padding: 0 50px 100px;
+        padding: 0 100px 100px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;

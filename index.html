@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cartRWD.css">
+    <link rel="stylesheet" href="style copy.css">
+    <link rel="stylesheet" href="cartRWD copy.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+    <!-- <header class="header">
 
         <div class="header_list">
 
@@ -36,194 +36,197 @@
             </div>
         </div>
 
-    </header>
+    </header> -->
     <div class="cart">
         <span class="cartTitle1">購物車</span>
         <!-- Cart contain -->
         <div class="cartContainer">
-            <!-- 商品明細 -->
-            <section class="leftCard cardStyle1">
-                <span class="cartTitle2">商品明細</span>
-                <ul>
-                    <li class="cartProdlist">
-                        <picture>
-                            <source srcset="img/MOBILE/牛麵.png" media="(max-width:621px)">
-                            <img src="img/PC/紅燒牛肉麵.png" alt="紅燒牛肉麵">
-                        </picture>
-                        <div class="cartCard">
-                            <div class="cardUp">
-                                <span>【即饗】紅燒牛肉麵(580g/包)</span>
-                                <a href=""><span class="material-symbols-outlined">
-                                    close
-                                </span></a>
-                            </div>
-                            <div class="cardDown">
-                                <span>NT$ 398</span>
-                                <div class="input-stepper">
-                                    <button class="minus" data-id="1"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" value="2" data-id="1">
-                                    <button class="plus" data-id="1"><span class="material-symbols-outlined">add</span></button>
+            <div class="leftCard">
+                <section class="cardStyle1">
+                    <span class="cartTitle2">商品明細</span>
+                    <ul>
+                        <li class="cartProdlist">
+                            <picture>
+                                <source srcset="img/MOBILE/牛麵.png" media="(max-width:621px)">
+                                <img src="img/PC/紅燒牛肉麵.png" alt="紅燒牛肉麵">
+                            </picture>
+                            <div class="cartCard">
+                                <div class="cardUp">
+                                    <span>【即饗】紅燒牛肉麵(580g/包)</span>
+                                    <a href=""><span class="material-symbols-outlined">
+                                        close
+                                    </span></a>
+                                </div>
+                                <div class="cardDown">
+                                    <span>NT$ 398</span>
+                                    <div class="input-stepper">
+                                        <button class="minus" data-id="1"><span class="material-symbols-outlined">remove</span></button>
+                                        <input type="number" value="2" data-id="1">
+                                        <button class="plus" data-id="1"><span class="material-symbols-outlined">add</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="cartProdlist">
-                        <picture>
-                            <source srcset="img/MOBILE/蒸餃.png" media="(max-width:621px)">
-                            <img src="img/PC/鮮蝦蒸餃.png" alt="鮮蝦蒸餃">
-                        </picture>
-                        <div class="cartCard">
-                            <div class="cardUp">
-                                <span>【即饗】極享鮮蝦蒸餃(120g/包)(10入/袋)</span>
-                                <a href=""><span class="material-symbols-outlined">
-                                    close
-                                </span></a>
-                            </div>
-                            <div class="cardDown">
-                                <span>NT$ 477</span>
-                                <div class="input-stepper">
-                                    <button class="minus" data-id="2"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" value="3" data-id="2">
-                                    <button class="plus" data-id="2"><span class="material-symbols-outlined">add</span></button>
+                        </li>
+                        <li class="cartProdlist">
+                            <picture>
+                                <source srcset="img/MOBILE/蒸餃.png" media="(max-width:621px)">
+                                <img src="img/PC/鮮蝦蒸餃.png" alt="鮮蝦蒸餃">
+                            </picture>
+                            <div class="cartCard">
+                                <div class="cardUp">
+                                    <span>【即饗】極享鮮蝦蒸餃(120g/包)(10入/袋)</span>
+                                    <a href=""><span class="material-symbols-outlined">
+                                        close
+                                    </span></a>
+                                </div>
+                                <div class="cardDown">
+                                    <span>NT$ 477</span>
+                                    <div class="input-stepper">
+                                        <button class="minus" data-id="2"><span class="material-symbols-outlined">remove</span></button>
+                                        <input type="number" value="3" data-id="2">
+                                        <button class="plus" data-id="2"><span class="material-symbols-outlined">add</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="cartProdlist DeletPod">
-                        <picture>
-                            <source srcset="img/MOBILE/黑咖哩.png" media="(max-width:621px)">
-                            <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
-                        </picture>
-                        <div class="cartCard">
-                            <div class="cardUp">
-                                <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
-                                <a id="cartDelet"><span class="material-symbols-outlined">
-                                    close
-                                </span></a>
-                            </div>
-                            <div class="cardDown">
-                                <span>NT$ 199</span>
-                                <div class="input-stepper">
-                                    <button class="minus" data-id="3"><span class="material-symbols-outlined">remove</span></button>
-                                    <input type="number" value="1" data-id="3">
-                                    <button class="plus" data-id="3"><span class="material-symbols-outlined">add</span></button>
+                        </li>
+                        <li class="cartProdlist DeletPod">
+                            <picture>
+                                <source srcset="img/MOBILE/黑咖哩.png" media="(max-width:621px)">
+                                <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                            </picture>
+                            <div class="cartCard">
+                                <div class="cardUp">
+                                    <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
+                                    <a id="cartDelet"><span class="material-symbols-outlined">
+                                        close
+                                    </span></a>
+                                </div>
+                                <div class="cardDown">
+                                    <span>NT$ 199</span>
+                                    <div class="input-stepper">
+                                        <button class="minus" data-id="3"><span class="material-symbols-outlined">remove</span></button>
+                                        <input type="number" value="1" data-id="3">
+                                        <button class="plus" data-id="3"><span class="material-symbols-outlined">add</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- 加購優惠 -->
+                <section class="cardStyle2">
+                    <span class="cartTitle2">加購優惠</span>
+                    <ul class="addCard">
+                        <li class="cartAdd">
+                            <picture>
+                                <source srcset="img/MOBILE/鮮肉包.png" media="(max-width:621px)">
+                                <img src="img/PC/鮮肉包.png" alt="鮮肉包">
+                            </picture>
+                            <div class="addContain">
+                                <p>【即饗】極享鮮肉包(100g/顆)(10入/袋)</p>
+                                <p>NT$ 200</p>
+                                <p>NT$ 149</p>
+                            </div>
+                        </li>
+                        <li class="cartAdd">
+                            <picture>
+                                <source srcset="img/MOBILE/筆管麵.png" media="(max-width:621px)">
+                                <img src="img/PC/筆管麵.png" alt="筆管麵">
+                            </picture> 
+                            <div class="addContain">
+                                <p>【即饗】茄汁筆管麵(280g/包)</p>
+                                <p>NT$ 180</p>
+                                <p>NT$ 119</p>
+                            </div>
+                        </li>
+                        <li class="cartAdd">
+                            <picture>
+                                <source srcset="img/MOBILE/小湯包.png" media="(max-width:621px)">
+                                <img src="img/PC/小籠包.png" alt="小籠包">
+                            </picture> 
+                            <div class="addContain">
+                                <p>【即饗】極享鮮肉小湯包(90g/顆)(6入/袋)</p>
+                                <p>NT$ 100</p>
+                                <p>NT$ 89</p>
+                            </div>
+                        </li>
+                        <li class="cartAdd">
+                            <picture>
+                                <source srcset="img/MOBILE/餛飩.png" media="(max-width:621px)">
+                                <img src="img/PC/餛飩.png" alt="餛飩">
+                            </picture> 
+                            <div class="addContain">
+                                <p>【即饗】鮮嫩雞餛飩(100g/顆)(6入/袋)</p>
+                                <p>NT$ 100</p>
+                                <p>NT$ 99</p>
+                            </div>
+                        </li>
+                        <li class="cartAdd">
+                            <picture>
+                                <source srcset="img/MOBILE/鰻魚飯.png" media="(max-width:621px)">
+                                <img src="img/PC/鰻魚飯.png" alt="鰻魚飯">
+                            </picture> 
+                            <div class="addContain">
+                                <p>【即饗】蒲燒鰻魚飯(390g/包)</p>
+                                <p>NT$ 250</p>
+                                <p>NT$ 199</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-            <!-- 加購優惠 -->
-            <section class="leftCard cardStyle2">
-                <span class="cartTitle2">加購優惠</span>
-                <ul class="addCard">
-                    <li class="cartAdd">
-                        <picture>
-                            <source srcset="img/MOBILE/鮮肉包.png" media="(max-width:621px)">
-                            <img src="img/PC/鮮肉包.png" alt="鮮肉包">
-                        </picture>
-                        <div class="addContain">
-                            <p>【即饗】極享鮮肉包(100g/顆)(10入/袋)</p>
-                            <p>NT$ 200</p>
-                            <p>NT$ 149</p>
-                        </div>
-                    </li>
-                    <li class="cartAdd">
-                        <picture>
-                            <source srcset="img/MOBILE/筆管麵.png" media="(max-width:621px)">
-                            <img src="img/PC/筆管麵.png" alt="筆管麵">
-                        </picture> 
-                        <div class="addContain">
-                            <p>【即饗】茄汁筆管麵(280g/包)</p>
-                            <p>NT$ 180</p>
-                            <p>NT$ 119</p>
-                        </div>
-                    </li>
-                    <li class="cartAdd">
-                        <picture>
-                            <source srcset="img/MOBILE/小湯包.png" media="(max-width:621px)">
-                            <img src="img/PC/小籠包.png" alt="小籠包">
-                        </picture> 
-                        <div class="addContain">
-                            <p>【即饗】極享鮮肉小湯包(90g/顆)(6入/袋)</p>
-                            <p>NT$ 100</p>
-                            <p>NT$ 89</p>
-                        </div>
-                    </li>
-                    <li class="cartAdd">
-                        <picture>
-                            <source srcset="img/MOBILE/餛飩.png" media="(max-width:621px)">
-                            <img src="img/PC/餛飩.png" alt="餛飩">
-                        </picture> 
-                        <div class="addContain">
-                            <p>【即饗】鮮嫩雞餛飩(100g/顆)(6入/袋)</p>
-                            <p>NT$ 100</p>
-                            <p>NT$ 99</p>
-                        </div>
-                    </li>
-                    <li class="cartAdd">
-                        <picture>
-                            <source srcset="img/MOBILE/鰻魚飯.png" media="(max-width:621px)">
-                            <img src="img/PC/鰻魚飯.png" alt="鰻魚飯">
-                        </picture> 
-                        <div class="addContain">
-                            <p>【即饗】蒲燒鰻魚飯(390g/包)</p>
-                            <p>NT$ 250</p>
-                            <p>NT$ 199</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+            <div class="rightCard">
+                <!-- 優惠票券 -->
+                <section class="cardStyle3">
+                    <span class="cartTitle2">優惠票券</span>
+                    <a href="#" class="cartCoupon">使用票券</a>
+                </section>
 
-            <!-- 優惠票券 -->
-            <section class="rightCard cardStyle3">
-                <span class="cartTitle2">優惠票券</span>
-                <a href="#" class="cartCoupon">使用票券</a>
-            </section>
+                <!-- 點數 -->
+                <section class="cardStyle4">
+                    <span class="cartTitle2">點數折抵</span>
+                    <div class="cartPoint">
+                        <span>
+                            <p>目前累積</p>
+                            <p>100</p>
+                            <p>點</p>
+                        </span>
+                        <input type="text" placeholder="輸入本次折抵點數">
+                    </div>
+                </section>
 
-            <!-- 點數 -->
-            <section class="rightCard cardStyle4">
-                <span class="cartTitle2">點數折抵</span>
-                <div class="cartPoint">
-                    <span>
-                        <p>目前累積</p>
-                        <p>100</p>
-                        <p>點</p>
-                    </span>
-                    <input type="text" placeholder="輸入本次折抵點數">
-                </div>
-            </section>
-
-            <!-- 付款明細 -->
-            <section class="rightCard cardStyle5">
-                <span class="cartTitle2">付款明細</span>
-                <ul>
-                    <li>
-                        <p>商品金額</p>
-                        <p>NT$ 1,074</p>
-                    </li>
-                    <li>
-                        <p>優惠折抵</p>
-                        <p>-</p>
-                    </li>
-                    <li>
-                        <p>點數折抵</p>
-                        <p>-</p>
-                    </li>
-                    <li>
-                        <p>運送費用</p>
-                        <p>-</p>
-                    </li>
-                    <li>
-                        <span></span>
-                    </li>
-                    <li>
-                        <p>小計</p>
-                        <p>NT$ 1,074</p>
-                    </li>
-                </ul>
-            </section>
+                <!-- 付款明細 -->
+                <section class="cardStyle5">
+                    <span class="cartTitle2">付款明細</span>
+                    <ul>
+                        <li>
+                            <p>商品金額</p>
+                            <p>NT$ 1,074</p>
+                        </li>
+                        <li>
+                            <p>優惠折抵</p>
+                            <p>-</p>
+                        </li>
+                        <li>
+                            <p>點數折抵</p>
+                            <p>-</p>
+                        </li>
+                        <li>
+                            <p>運送費用</p>
+                            <p>-</p>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <p>小計</p>
+                            <p>NT$ 1,074</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>            
         </div>
 
         <!-- Fix area -->
@@ -231,7 +234,7 @@
             <div>
                 <p>小計</p>
                 <P>NT$1,074</P>
-                <a href="">立即結帳</a>
+                <a href="index2.html">立即結帳</a>
             </div>
         </div>
 
@@ -244,7 +247,10 @@
             </div>
 
             <div>
-                <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                <picture>
+                    <source srcset="img/MOBILE/黑咖哩.png" media="(max-width:621px)">
+                    <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                </picture>
                 <div class="cartCard">
                     <div class="cardUp">
                         <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
@@ -257,8 +263,8 @@
             </div>
 
             <div class="Deletbtn">
-                <a  class="Deletbtn1">保留</a>
-                <a  class="Deletbtn2">刪除</a>
+                <a id="Cancel1" class="Deletbtn1">保留</a>
+                <a id="Delet" class="Deletbtn2">刪除</a>
             </div>
         </div>
         <div class="cartSave">
@@ -268,7 +274,10 @@
             </div>
 
             <div>
-                <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                <picture>
+                    <source srcset="img/MOBILE/黑咖哩.png" media="(max-width:621px)">
+                    <img src="img/PC/牛肉黑咖哩.png" alt="牛肉黑咖哩">
+                </picture>
                 <div class="cartInfo">
                         <span>【即饗】牛肉黑咖哩醬包(180g/包)</span>
                         <span>NT$ 199</span>
@@ -276,8 +285,14 @@
             </div>
 
             <div class="Deletbtn">
-                <a  class="Deletbtn1">取消</a>
-                <a  class="Deletbtn2">收藏</a>
+                <a id='Cancel2' class="Deletbtn1">取消</a>
+                <a id="Save" class="Deletbtn2">收藏</a>
+            </div>
+        </div>
+        <div class="cartNt">
+            <div class="dash_nt">
+                <img class='Nticon' src="img/任務01/fluent-mdl2_completed-solid.png" alt="">
+                <p>已加入收藏</p>
             </div>
         </div>
 
@@ -320,7 +335,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="Savebtn1">確認</a>
+                <a href="" class="Savebtn1">確認</a>
             </div>
         </div>
     </div>

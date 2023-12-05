@@ -1,0 +1,143 @@
+/* w1280 */
+@media screen and (max-width: 1201px){
+    .cartContainer{
+        width: auto;
+        margin: 0 100px;
+    } 
+
+    .cartTitle1{
+        margin-left: 100px;
+    }
+
+    .cartPaynow a{
+        margin-right: 100px;
+    }
+
+    .cartPoint span{
+        margin-right: 12px;
+    }
+
+    .cartPoint input{
+        width: 40%;
+        text-indent: 2px;
+    }
+
+    .cardStyle2{
+        overflow: scroll;
+    }
+
+    .cartAdd{
+        margin-right: 12px;
+    }
+
+    .cartProdlist picture{
+        margin-right: 16px;
+    }
+}
+
+
+/* @media screen and (max-width: 1118px){
+    .cartContainer{
+        width: auto;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0 100px 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .cardStyle1{
+        grid-row: 1/5;
+        grid-column:1/1;
+    }
+
+    .cardStyle2{
+        overflow: hidden;
+        height: 100%;
+        grid-column:1/1;
+        grid-row: 5/12;
+    }
+
+    .cardStyle3,.cardStyle4,.cardStyle5{
+        grid-column:2/2;
+    }
+
+    .cartCard{
+        width: 300px;
+    }
+
+    .cartProdlist{
+        margin-right: 12px;
+    }
+
+    .cartPoint{
+        flex-direction:row;
+        margin-bottom: 16px;
+        justify-content: flex-start;
+    }
+} */
+@media screen and (max-width: 1000px){
+
+    .cartPoint{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 16px;
+    }
+
+    .cartPoint input{
+        width: 100%;
+    }
+
+    .cartDelet,.cartSave,.cartNt{
+        width: 70%;
+    }
+
+    .dash_nt{
+        width: 80%;
+    }
+
+    .Nticon{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 831px){
+    .cartContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartProdlist picture{
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .cartContainer{
+        margin: 0 20px;
+    }
+
+    .cartTitle1{
+        margin-left: 20px;
+    }
+
+    .cartPaynow a{
+        margin-right: 20px;
+    }
+
+    .cartPaynow p + p{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width:391px){
+    body{
+        font-size: 14px;
+    }
+}
+
+
+

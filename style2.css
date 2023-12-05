@@ -127,7 +127,6 @@ header.header div.header_list div.header_nav_list ul.header_nav_list_right > li:
 
 .cartContainer{
     margin: 0 auto;
-    /* max-height: 850px; */
     height: calc(100%-100px);
     max-width: 1200px;
     display:grid;
@@ -145,6 +144,9 @@ header.header div.header_list div.header_nav_list ul.header_nav_list_right > li:
 .cartRight{
     grid-column: 3/4;
     height: auto;
+
+    position: sticky;
+    top:0;
 }
 
 .card{
@@ -440,6 +442,11 @@ input[type="radio"]:checked + label::before {
 .cardDown{
     padding-right: 20px;
 }
+
+/* .Right1,.Right2{
+    position: sticky;
+    top:0;
+} */
 
 /* Fix Area */
 .cart2Paynow{
