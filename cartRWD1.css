@@ -35,49 +35,6 @@
     }
 }
 
-
-/* @media screen and (max-width: 1118px){
-    .cartContainer{
-        width: auto;
-        left: 0;
-        right: 0;
-        margin: auto;
-        padding: 0 100px 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-
-    .cardStyle1{
-        grid-row: 1/5;
-        grid-column:1/1;
-    }
-
-    .cardStyle2{
-        overflow: hidden;
-        height: 100%;
-        grid-column:1/1;
-        grid-row: 5/12;
-    }
-
-    .cardStyle3,.cardStyle4,.cardStyle5{
-        grid-column:2/2;
-    }
-
-    .cartCard{
-        width: 300px;
-    }
-
-    .cartProdlist{
-        margin-right: 12px;
-    }
-
-    .cartPoint{
-        flex-direction:row;
-        margin-bottom: 16px;
-        justify-content: flex-start;
-    }
-} */
 @media screen and (max-width: 1000px){
 
     .cartPoint{
