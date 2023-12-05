@@ -90,17 +90,8 @@
         width: 100%;
     }
 
-    .cartDelet,.cartSave,.cartNt,.cartCouponspop{
+    .cartDelet,.cartSave,.cartCouponspop{
         width: 70%;
-    }
-
-    .dash_nt{
-        width: 80%;
-    }
-
-    .Nticon{
-        margin-left: 20px;
-        margin-right: 20px;
     }
 }
 
