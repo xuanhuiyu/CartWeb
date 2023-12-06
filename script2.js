@@ -4,8 +4,26 @@ $(function(){
     // 運送方式
     $('.Delivery').click(function(){
         // $(this).parent().siblings().children('ul').animate({maxHeight:0},500);
-        $(this).next().animate({maxHeight:450},100);
+        $('.cartMask').css({'display':'block',});
     })
+    
+    $('.cartPopclose').click(function(){
+        $('.cartMask').removeAttr('style');
+    })
+
+    $('.Addressbtn').click(function(){
+        $('.cartMask').removeAttr('style');
+        $('.Delivery').next().animate({maxHeight:450},100);
+    })
+
+    $('.cartMask').click(function(){
+        $(this).removeAttr('style');
+    })
+
+    $('.cartAddresspop').click(function(e){
+        e.stopPropagation();
+    })
+        
 
     // 商品明細
     $( ".cartDetail" ).on( "click", function() {

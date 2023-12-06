@@ -529,7 +529,7 @@ input[type="radio"]:checked + label::before {
     position: fixed;
     left: 0;
     top: 0;
-    /* display: none; */
+    display: none;
 }
 
 .cartPopTitle{
@@ -546,7 +546,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .cartAddresspop{
-    width: 40%;
+    width: 600px;
     height: auto;
     margin: 0 auto;
     background-color: #fff;

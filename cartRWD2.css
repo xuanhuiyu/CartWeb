@@ -84,7 +84,33 @@
     .cartAddress span:nth-child(2) span + input{
         width: 92%;
     }
+
+    .cartAddresspop{
+        width: 70%;
+    }
+
+    .cartAddress2 input:first-child,.cartAddress2 input:nth-child(2){
+        width: 15%;
+    }
+    
+    .cartAddress2 input:last-child{
+        width: 67%;
+    }
 }
+
+@media screen and (max-width: 611px){
+    .cartAddress2 input:first-child,.cartAddress2 input:nth-child(2){
+        width: 48%;
+    }
+    .cartAddress2 input:first-child{
+        margin-right: 2px;
+    }
+    .cartAddress2 input:last-child{
+        width: 99%;
+    }
+
+}
+
 
 @media screen and (max-width: 550px){
     .cartContainer{
