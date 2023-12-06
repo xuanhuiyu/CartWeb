@@ -14,6 +14,8 @@ $(function(){
     $('.Addressbtn').click(function(){
         $('.cartMask').removeAttr('style');
         $('.Delivery').next().animate({maxHeight:450},100);
+        $('.addDelivery').text('NT$ 200');
+        $('.addDelAmout').text('NT$ 987');
     })
 
     $('.cartMask').click(function(){

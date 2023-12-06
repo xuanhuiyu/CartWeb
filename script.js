@@ -66,6 +66,7 @@ window.onload = function(){
             $('.cartDelet').removeClass('open');
             $('.DeletPod').css({'display':'none',});
             $('.cartSave').addClass('open');
+            $('.totalamout').text('NT$ 875');
         })
 
         $('#Cancel2').click(function(){
@@ -99,6 +100,9 @@ window.onload = function(){
         })
         $('.Savebtn1').click(function(){
             $('.cartMask2').removeAttr('style');
+            $('.selCoupons').text('NT$ -88');
+            $('.totalamout').text('NT$ 787');
+
         })
         $('.cartMask2').click(function(){
             $(this).removeAttr('style');
