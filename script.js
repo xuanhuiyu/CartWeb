@@ -66,7 +66,7 @@ window.onload = function(){
             $('.cartDelet').removeClass('open');
             $('.DeletPod').css({'display':'none',});
             $('.cartSave').addClass('open');
-            $('.totalamout').text('NT$ 875');
+            $('.DeletAum').text('NT$ 875');
         })
 
         $('#Cancel2').click(function(){
