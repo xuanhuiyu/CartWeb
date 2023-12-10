@@ -154,7 +154,7 @@ header.header {
 }
 
 ul{
-    margin:0 24px;
+    margin:0 20px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -284,6 +284,7 @@ li{
 
 .addCard{
     display:inline-flex;
+    margin-right: 0;
 }
 
 .cartAdd{
